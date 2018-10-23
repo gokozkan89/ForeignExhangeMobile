@@ -1,12 +1,16 @@
 import React from 'react';
 import {
-    DrawerNavigator as BaseDrawerNavigator,
-    StackNavigator as BaseStackNavigator
+    createDrawerNavigator as BaseDrawerNavigator,
+    createStackNavigator as BaseStackNavigator
 } from 'react-navigation';
 import FxRates from '../Screen/FxRates';
+import GSideBar from '../Components/GSideBar'
 export const DrawerNavigator = BaseDrawerNavigator(
     {
         FxRates: { screen: FxRates }
+    }, 
+    {
+        contentComponent: props => <GSideBar {...props} />,
     }
 );
 
