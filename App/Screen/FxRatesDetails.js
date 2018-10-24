@@ -5,6 +5,8 @@ export default class FxRatesDetails extends Component{
         super()
     }
     render() {
-        return null;
+        return <div>
+            <button></button>
+        </div>
     }
 }

@@ -19,8 +19,6 @@ export default class FxRates extends Component {
   onAction(item) {
     console.log(item)
   }
-
-
   render() {
     if (this.state.isLoading) {
       return (
@@ -34,7 +32,7 @@ export default class FxRates extends Component {
         <GHeader
           leftNav="openDrawer"
           rightNav="Kurlar"
-          title="Anasayfa"
+          title="Döviz Kurları"
           navigation={this.props.navigation} />
         <Content>
           <View style={{ flex: 1 }}>
